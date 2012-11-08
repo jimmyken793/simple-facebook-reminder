@@ -1,0 +1,13 @@
+<div class="row-fluid">
+<% @alarms.each do |alarm| %>
+
+  <div class="span6">
+    <h2><%= alarm.title %></h2>
+    <% if current_user.alarms.include? alarm %>
+    <p><%=link_to 'Unsubscribe', alarm_path(alarm)+'/unsubscribe', :class=>"btn btn-large btn-primary"%></p>
+    <% else%>
+    <p><%=link_to 'Subscribe', alarm_path(alarm)+'/subscribe', :class=>"btn btn-large btn-primary"%></p>
+    <% end %>
+  </div>
+<% end %>
+</div>

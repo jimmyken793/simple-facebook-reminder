@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-
+gem 'thin'
 gem 'rails', '3.2.8'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'rest-graph'
 
 
 # Gems used only for assets and not required
@@ -53,6 +54,10 @@ group :production do
   gem 'newrelic_rpm'
 end
 
+gem "omniauth"
+gem "omniauth-facebook"
+
+gem 'rails_admin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

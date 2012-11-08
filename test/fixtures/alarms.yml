@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  period: 1
+  start_time: 2012-10-29 19:29:35
+  type: 1
+
+two:
+  title: MyString
+  period: 1
+  start_time: 2012-10-29 19:29:35
+  type: 1
