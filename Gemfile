@@ -40,6 +40,7 @@ group :assets do
 end
 
 group :development do 
+  gem 'tap'
   gem "capistrano"
   gem "cape"
   gem "magic_encoding"
