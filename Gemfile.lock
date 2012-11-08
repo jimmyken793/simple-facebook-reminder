@@ -174,7 +174,6 @@ GEM
     rdoc (3.12)
       json (~> 1.4)
     remotipart (1.0.2)
-    rest-graph (2.0.2)
     sass (3.2.1)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
@@ -231,7 +230,6 @@ DEPENDENCIES
   omniauth-facebook
   rails (= 3.2.8)
   rails_admin
-  rest-graph
   sass-rails (~> 3.2.3)
   seo_helper (~> 1.0)
   settingslogic
