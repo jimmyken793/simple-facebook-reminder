@@ -8,15 +8,14 @@ task :update_feed => :environment do
 	Alarm.all.each{|alarm|
 		elapsed_time = triggered_time - alarm.start_time
 		if elapsed_time % alarm.period < TRIGGER_PERIOD/2
-			print "#{alarm.title} triggered"
+			puts "#{alarm.title} triggered"
 			alarm.send_notifications
 		elsif alarm.period - elapsed_time % alarm.period < TRIGGER_PERIOD/2
-			print "#{alarm.title} triggered"
+			puts "#{alarm.title} triggered"
 			alarm.send_notifications
 		else
-			print "#{alarm.title} not triggered"
+			puts "#{alarm.title} not triggered"
 		end
-
 	}
 end
 
